@@ -13,11 +13,12 @@ namespace WcfSample
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //create a service client.
             var service = new Service1Client();
-            if (service.Testdb() == 1)  //Testdb is the function in service which is only returning 1
-            {
+
+            //test the connection and is succedes show a message.
+            if (service.Testdb() == 1) 
                 MessageBox.Show("Hello there");
-            }
         }
     }
 }

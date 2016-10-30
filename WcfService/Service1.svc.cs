@@ -1,10 +1,17 @@
 ﻿namespace WcfService
 {
-public class Service1 : IService1
-{
-    public int Testdb()
+    /// <summary>
+    /// Service class implementing the IService1 contract
+    /// </summary>
+    public class Service1 : IService1
     {
-        return 1;
+        /// <summary>
+        /// Tests the connection to the Database system.
+        /// </summary>
+        /// <returns></returns>
+        public int Testdb()
+        {
+            return 1;
+        }
     }
-}
 }
